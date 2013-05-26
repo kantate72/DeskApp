@@ -1,4 +1,7 @@
+<% provide(:title, "Register") %>
+
 <%= form_for @user, :html => {:class => "login-reg"} do |f| %>
+<%= render 'shared/error_messages' %>
 
   <%= f.text_field :email, { :value => "Email" } %>
 

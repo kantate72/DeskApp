@@ -12,6 +12,8 @@
     background-color: #EEEEEE;
     clear: both;
     float: left;
+    font-size: 12px;
+    line-height: 16px;
     margin-top: 45px;
     padding: 12px;
     width: 100%;
@@ -23,10 +25,19 @@ body, input {
 }
 a{
     text-decoration: none;
-    &:link {
+    &:link, &:visited {
         color:#438fc1;
     }
     &:hover {
         color:#426283;
+    }
+}
+#error_explanation {
+    color:#cd0619;
+    font-size:12px;
+    line-height:14px;
+    margin-bottom:8px;
+    .alert {
+        font-weight:bold;
     }
 }

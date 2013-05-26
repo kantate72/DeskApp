@@ -1,9 +1,12 @@
 QuizApp::Application.routes.draw do
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   root to: 'users#new'
 
   match '/register',  to: 'users#new'
+  match '/login',  to: 'sessions#new'
+  match '/logout', to: 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

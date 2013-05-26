@@ -70,6 +70,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #EEEEEE;
   clear: both;
   float: left;
+  font-size: 12px;
+  line-height: 16px;
   margin-top: 45px;
   padding: 12px;
   width: 100%;
@@ -78,22 +80,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
-/* line 21, ../../app/assets/stylesheets/_base.scss */
+/* line 23, ../../app/assets/stylesheets/_base.scss */
 body, input {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-/* line 24, ../../app/assets/stylesheets/_base.scss */
+/* line 26, ../../app/assets/stylesheets/_base.scss */
 a {
   text-decoration: none;
 }
-/* line 26, ../../app/assets/stylesheets/_base.scss */
-a:link {
+/* line 28, ../../app/assets/stylesheets/_base.scss */
+a:link, a:visited {
   color: #438fc1;
 }
-/* line 29, ../../app/assets/stylesheets/_base.scss */
+/* line 31, ../../app/assets/stylesheets/_base.scss */
 a:hover {
   color: #426283;
+}
+
+/* line 35, ../../app/assets/stylesheets/_base.scss */
+#error_explanation {
+  color: #cd0619;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+/* line 40, ../../app/assets/stylesheets/_base.scss */
+#error_explanation .alert {
+  font-weight: bold;
 }
 
 /* line 3, ../../app/assets/stylesheets/screen.css.scss */
