@@ -1,16 +1,16 @@
 /*
-Syntax error: File to import not found or unreadable: bootstrap.
+Syntax error: File to import not found or unreadable: variables.
               Load paths:
                 /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass
                 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/blueprint/stylesheets
                 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets
                 Compass::SpriteImporter
-        on line 5 of /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.scss
+        on line 2 of /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.css.scss
 
-1: /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.scss
+1: /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.css.scss
 
 Backtrace:
-/Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.scss:5
+/Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.css.scss:2
 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.9/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.9/lib/sass/tree/import_node.rb:45:in `import'
 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/sass-3.2.9/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -77,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: bootstrap.\A               Load paths:\A                 /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass\A                 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 5 of /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.scss\A \A 1: /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.scss"; }
+  content: "Syntax error: File to import not found or unreadable: variables.\A               Load paths:\A                 /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass\A                 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/ethompson/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.css.scss\A \A 1: /Users/ethompson/rails_projects/DeskApp/QuizApp/app/assets/sass/styles.css.scss"; }

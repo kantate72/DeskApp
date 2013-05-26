@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+@import url(bootstrap-responsive.min.css);
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../../app/assets/stylesheets/_base.scss */
+.debug_dump {
+  background-color: #EEEEEE;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  padding: 12px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 21, ../../app/assets/stylesheets/_base.scss */
+body, input {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* line 24, ../../app/assets/stylesheets/_base.scss */
+a {
+  text-decoration: none;
+}
+/* line 26, ../../app/assets/stylesheets/_base.scss */
+a:link {
+  color: #438fc1;
+}
+/* line 29, ../../app/assets/stylesheets/_base.scss */
+a:hover {
+  color: #426283;
+}
+
+/* line 3, ../../app/assets/stylesheets/screen.css.scss */
+#Container {
+  max-width: 600px;
+  width: 100%;
+  margin: 28px auto;
+}
+/* line 8, ../../app/assets/stylesheets/screen.css.scss */
+#Container header {
+  font-size: 14px;
+  margin: 0 auto 40px;
+  width: 150px;
+}
+/* line 12, ../../app/assets/stylesheets/screen.css.scss */
+#Container header li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+/* line 18, ../../app/assets/stylesheets/screen.css.scss */
+.login-reg {
+  background-color: #ededed;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 120px auto 0;
+  max-width: 410px;
+  width: 100%;
+  padding: 38px;
+}
+/* line 27, ../../app/assets/stylesheets/screen.css.scss */
+.login-reg input {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #BABABA;
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding: 12px 10px;
+  width: 100%;
+}
+/* line 37, ../../app/assets/stylesheets/screen.css.scss */
+.login-reg input:focus {
+  border: 1px solid #438fc1;
+}
+/* line 41, ../../app/assets/stylesheets/screen.css.scss */
+.login-reg .btn {
+  background-color: #9B58B5;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 16px 0 0;
+  padding: 12px;
+}
+/* line 50, ../../app/assets/stylesheets/screen.css.scss */
+.login-reg .btn:hover {
+  background-color: #864c9d;
+}

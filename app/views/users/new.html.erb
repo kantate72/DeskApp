@@ -1,2 +1,8 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<%= form_for @user, :html => {:class => "login-reg"} do |f| %>
+
+  <%= f.text_field :email, { :value => "Email" } %>
+
+  <%= f.text_field :password, { :value => "Password" } %>
+
+  <%= f.submit "Register", class: "btn" %>
+<% end %>

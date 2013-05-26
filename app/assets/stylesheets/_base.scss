@@ -1,0 +1,32 @@
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+@import "bootstrap-responsive.min.css";
+
+@mixin box_sizing {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.debug_dump {
+    background-color: #EEEEEE;
+    clear: both;
+    float: left;
+    margin-top: 45px;
+    padding: 12px;
+    width: 100%;
+    @include box_sizing;
+}
+
+body, input {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    &:link {
+        color:#438fc1;
+    }
+    &:hover {
+        color:#426283;
+    }
+}
