@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     sign_out
     super
   end
+  
+  def current_user
+    @current_user ||= User.limit(1).where('id = ?', session[:id])
+  end
 end
