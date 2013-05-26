@@ -1,17 +1,18 @@
 <% provide(:title, "Quiz") %>
 
-<%= Quiz.question[0] %>
+{{ question }}
 
- <%= form_for(:quiz, :html => {:class => "quiz-form"} ) do |f| %>
-
+ <%= form_tag("/", :class => "quiz-form", "ng-submit" => "addTodo()") do %>
     <ol>
-        <li><%= f.radio_button(:q1, "A") %><%= Quiz.q1_answerA %></li>
-        <li><%= f.radio_button(:q1, "B") %><%= Quiz.q1_answerB %></li>
-        <li><%= f.radio_button(:q1, "C") %><%= Quiz.q1_answerC %></li>
-        <li><%= f.radio_button(:q1, "D") %><%= Quiz.q1_answerD %></li>
-        <li><%= f.radio_button(:q1, "E") %><%= Quiz.q1_answerA %></li>
+        <li><%= radio_button_tag(:q1, "A") %>{{ answers.answerA }}</li>
+        <li><%= radio_button_tag(:q1, "B") %>{{ answers.answerB }}</li>
+        <li><%= radio_button_tag(:q1, "C") %>{{ answers.answerC }}</li>
+        <li><%= radio_button_tag(:q1, "D") %>{{ answers.answerD }}</li>
+        <li><%= radio_button_tag(:q1, "E") %>{{ answers.answerA }}</li>
     </ol>
+    
+      <%= hidden_field_tag :user_id, { :value => current_user.id } %>
 
 
-  <%= f.submit "Continue", class: "btn" %>
+  <%= submit_tag "Continue", class: "btn" %>
 <% end %>

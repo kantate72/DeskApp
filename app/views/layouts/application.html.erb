@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Quiz">
 <head>
   <title>QuizApp</title>
   <%= stylesheet_link_tag    "screen", media: 'screen' %>
+  <%= javascript_include_tag "angular.min.js" %>
+  <%= javascript_include_tag "angular-resource.min.js" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <title><%= yield(:title) %></title>
 </head>
 <body>
 
-<div id="Container">
+<div id="Container" ng-controller="QuizCtrl">
   <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
