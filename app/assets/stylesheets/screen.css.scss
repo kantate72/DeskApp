@@ -15,7 +15,7 @@
         }
     }
 }
-.login-reg {
+.login-reg, .quiz-form {
     background-color:#ededed;
     border-radius:4px;
     @include box_sizing;
@@ -51,4 +51,7 @@
             background-color:#864c9d;
         }
     }
+}
+.quiz-form {
+    max-width: 560px;
 }

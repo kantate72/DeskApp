@@ -1,0 +1,17 @@
+<% provide(:title, "Quiz") %>
+
+<%= Quiz.question[0] %>
+
+ <%= form_for(:quiz, :html => {:class => "quiz-form"} ) do |f| %>
+
+    <ol>
+        <li><%= f.radio_button(:q1, "A") %><%= Quiz.q1_answerA %></li>
+        <li><%= f.radio_button(:q1, "B") %><%= Quiz.q1_answerB %></li>
+        <li><%= f.radio_button(:q1, "C") %><%= Quiz.q1_answerC %></li>
+        <li><%= f.radio_button(:q1, "D") %><%= Quiz.q1_answerD %></li>
+        <li><%= f.radio_button(:q1, "E") %><%= Quiz.q1_answerA %></li>
+    </ol>
+
+
+  <%= f.submit "Continue", class: "btn" %>
+<% end %>

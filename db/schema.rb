@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130526011408) do
+ActiveRecord::Schema.define(:version => 20130526041212) do
+
+  create_table "quizzes", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "q1"
+    t.string   "q2"
+    t.string   "q3"
+    t.string   "q4"
+    t.string   "q5"
+    t.string   "score"
+    t.string   "user_id"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"

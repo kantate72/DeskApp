@@ -129,7 +129,7 @@ a:hover {
 }
 
 /* line 18, ../../app/assets/stylesheets/screen.css.scss */
-.login-reg {
+.login-reg, .quiz-form {
   background-color: #ededed;
   border-radius: 4px;
   -moz-box-sizing: border-box;
@@ -141,7 +141,7 @@ a:hover {
   padding: 38px;
 }
 /* line 27, ../../app/assets/stylesheets/screen.css.scss */
-.login-reg input {
+.login-reg input, .quiz-form input {
   border-radius: 4px;
   border: 1px solid #fff;
   -moz-box-sizing: border-box;
@@ -154,11 +154,11 @@ a:hover {
   width: 100%;
 }
 /* line 37, ../../app/assets/stylesheets/screen.css.scss */
-.login-reg input:focus {
+.login-reg input:focus, .quiz-form input:focus {
   border: 1px solid #438fc1;
 }
 /* line 41, ../../app/assets/stylesheets/screen.css.scss */
-.login-reg .btn {
+.login-reg .btn, .quiz-form .btn {
   background-color: #9B58B5;
   border: none;
   color: #fff;
@@ -168,6 +168,11 @@ a:hover {
   padding: 12px;
 }
 /* line 50, ../../app/assets/stylesheets/screen.css.scss */
-.login-reg .btn:hover {
+.login-reg .btn:hover, .quiz-form .btn:hover {
   background-color: #864c9d;
+}
+
+/* line 55, ../../app/assets/stylesheets/screen.css.scss */
+.quiz-form {
+  max-width: 560px;
 }
