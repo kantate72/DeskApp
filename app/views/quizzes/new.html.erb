@@ -2,17 +2,11 @@
 
 {{ question }}
 
- <%= form_tag("/", :class => "quiz-form", "ng-submit" => "addTodo()") do %>
+ <div class="quiz-form")
     <ol>
-        <li><%= radio_button_tag(:q1, "A") %>{{ answers.answerA }}</li>
-        <li><%= radio_button_tag(:q1, "B") %>{{ answers.answerB }}</li>
-        <li><%= radio_button_tag(:q1, "C") %>{{ answers.answerC }}</li>
-        <li><%= radio_button_tag(:q1, "D") %>{{ answers.answerD }}</li>
-        <li><%= radio_button_tag(:q1, "E") %>{{ answers.answerA }}</li>
+        <li ng-repeat="answer in answers"><input type="radio" name="answers" value={{answer.value}} ng-model="radios.selected" />{{answer.value}}. {{answer.text}}</li>
     </ol>
     
-      <%= hidden_field_tag :user_id, { :value => current_user.id } %>
-
-
-  <%= submit_tag "Continue", class: "btn" %>
-<% end %>
+    <%= hidden_field_tag :user_id, { :value => current_user.id } %>
+    <button class="btn" ng-click="nextStep()">Continue</button>
+</div>
