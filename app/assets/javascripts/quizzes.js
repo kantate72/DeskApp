@@ -10,6 +10,10 @@ function QuizCtrl($scope, $resource) {
     Question = $resource('/quizzes/show');
     questions = Question.query(function(){
         $scope.question = questions[step].question;
+        $scope.questionNum = function(){
+            index = step+1;
+            return index;
+        };
         $scope.answers = questions[step].answers;
         $scope.answers = ansArray();
         removeExtras();

@@ -1,11 +1,13 @@
 <% provide(:title, "Login") %>
 
- <%= form_for(:session, url: sessions_path, :html => {:class => "login-reg"}) do |f| %>
+<div ng-controller="LoginCtrl">
 
-
-  <%= f.text_field :email, { :value => "Email" } %>
-
-  <%= f.text_field :password, { :value => "Password" } %>
-
-  <%= f.submit "Login", class: "btn" %>
-<% end %>
+    <%= form_for(:session, url: sessions_path, :html => {:class => "login-reg"}) do |f| %>
+   
+        <%= f.text_field :email, { "ng-model" => "Email" } %>
+   
+        <%= f.text_field :password, { "ng-model" => "Password" } %>
+   
+        <%= f.submit "Login", class: "btn" %>
+    <% end %>
+</div>
