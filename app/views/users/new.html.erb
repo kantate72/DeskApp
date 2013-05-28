@@ -3,9 +3,10 @@
 <%= form_for @user, :html => {:class => "login-reg"} do |f| %>
 <%= render 'shared/error_messages' %>
 
-  <%= f.text_field :email, { :value => "Email" } %>
+    <%= f.text_field :email, { "ng-model" => "email", "placeholder" => "Email" } %>
+   
+    <%= f.text_field :password, { "ng-model" => "password", "placeholder" => "Password" } %>
+   
 
-  <%= f.text_field :password, { :value => "Password" } %>
-
-  <%= f.submit "Register", class: "btn" %>
+    <%= f.submit "Register", class: "btn" %>
 <% end %>

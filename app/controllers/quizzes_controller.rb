@@ -1,16 +1,16 @@
 class QuizzesController < ApplicationController
+  
   def new
     @quiz = Quiz.new
   end
   
   def create
-    @quiz = Quiz.new(params[:user])
-    @quiz.save
+    @quiz = Quiz.new(params[:quiz])
     if @quiz.save
-      redirect_to :action => "edit", :question=> 1
-    else
-      redirect_to 'edit'
+    respond_to do |format|
+      format.json{render :json => @quiz}
     end
+  end
   end
   
   def edit

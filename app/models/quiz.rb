@@ -1,5 +1,5 @@
 class Quiz < ActiveRecord::Base
-    attr_accessible :q1, :q2, :q3, :q4, :q5
+    attr_accessible :user_id, :q1, :q2, :q3, :q4, :q5
     
     belongs_to :user
     

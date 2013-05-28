@@ -104,15 +104,12 @@ li {
 }
 
 /* line 38, ../../app/assets/stylesheets/_base.scss */
-#error_explanation {
+#error_explanation, .alert {
   color: #cd0619;
+  display: block;
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 8px;
-}
-/* line 43, ../../app/assets/stylesheets/_base.scss */
-#error_explanation .alert {
-  font-weight: bold;
 }
 
 /* line 3, ../../app/assets/stylesheets/screen.css.scss */

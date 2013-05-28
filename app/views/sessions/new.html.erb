@@ -1,12 +1,16 @@
 <% provide(:title, "Login") %>
 
-<div ng-controller="LoginCtrl">
+<div ng-controller="SessionCtrl">
 
     <%= form_for(:session, url: sessions_path, :html => {:class => "login-reg"}) do |f| %>
+    
+    <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
    
-        <%= f.text_field :email, { "ng-model" => "Email" } %>
+        <%= f.text_field :email, { "ng-model" => "email", "placeholder" => "Email" } %>
    
-        <%= f.text_field :password, { "ng-model" => "Password" } %>
+        <%= f.text_field :password, { "ng-model" => "password", "placeholder" => "Password" } %>
    
         <%= f.submit "Login", class: "btn" %>
     <% end %>

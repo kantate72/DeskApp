@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="Quiz">
+<html ng-app="quiz">
 <head>
   <title>QuizApp</title>
   <%= stylesheet_link_tag    "screen", media: 'screen' %>
@@ -12,12 +12,9 @@
 <body>
 
 <div id="Container">
-  <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key %>"><%= value %></div>
-      <% end %>
   <% if signed_in? %>
-    <header class="logged-in">
-      <span class="welcome">Hi, <%= @current_user.email %></span> <%=link_to "Logout", login_path, method: "delete" %></li>
+    <header class="logged-in" ng-controller="SessionCtrl">
+      <span class="welcome">Hi, <%= @current_user.email %></span><%=link_to "Logout", logout_path, method: "delete" %></li>
     </header>
   <% else %>
     <header>

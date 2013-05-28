@@ -3,11 +3,12 @@
     <h1 class="question">{{ questionNum() }}. {{ question }}</h1>
     
      <div class="quiz-form">
+        <span class='alert'>{{alert}}</span>
         <ol>
             <li ng-repeat="answer in answers"><input type="radio" name="answers" value={{answer.value}} ng-model="radios.selected" />{{answer.value}}. {{answer.text}}</li>
         </ol>
-        
-        <%= hidden_field_tag :user_id, { :value => current_user.id } %>
+        <%= hidden_field_tag :user_id, current_user.id, {"ng-model"=>"user_id"} %>
         <button class="btn" ng-click="nextStep()">Continue</button>
+        {{user_id}}
     </div>
 </div>
