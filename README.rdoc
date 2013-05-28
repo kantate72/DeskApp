@@ -1,14 +1,16 @@
 == My Desk App
 
-This app is built in Rails and Angular. The login/logout views and functionality are mostly created in rails, as are the views for all pages. The
-quiz content (questions and answers) are populated from an angular query to the server, and reloaded on a single rails view with each click. The answers are saved to a local angular array and saved to the database with each click. My original thought was to save each value to its own
+This app is built in Rails and Angular. The login/logout views and functionality are mostly created in Rails, as are the views for all pages. The
+quiz content (questions and answers) are populated from an Angular query to the server, and reloaded on a single Rails view with each click. The answers are saved to a local Angular array and saved to the database with each click. My original thought was to save each value to its own
 column in the table, but then it seemed easier to keep them in an array. I would need to run a migration and update the table format to reflect this change.
 
 
 I am not running any routes in Angular, although I was going to set up a route for the answers view, but didn't have time to create that view. I have some placeholder views in the quizzes.js file, but would probably move those out to the services file.
 
-Even though I am saving the data to the database after each step and could load up the test where the user exited if they closed the browser, given more time, I would have set up local storage to retain the information saved in the angular model for the selected answers. There were no specs on
-how to treat a returning user who hadn't completed the test, but it would seem logical to start them where they left off.
+Even though I am saving the data to the database after each step and could load up the test where the user exited if they closed the browser, given more time, I would have set up local storage to retain the information saved in the Angular model for the selected answers. There were no specs on
+how to treat a returning user who hadn't completed the test, but it would seem logical to have them continue where they left off.
+
+I also kept the jquery-rails gem installed for the delete method on logout. I spent a little time configuring a delete method on Angular, but decided to move on to finish up the quiz.
 
 This has been a fun project... could have kept going, but I've already gone over the 2 day limit. Thanks!
 
