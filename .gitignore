@@ -16,3 +16,5 @@
 
 #Ignore SASS's scssc files
 *.scssc
+
+*.DS_Store
