@@ -14,6 +14,11 @@ function QuizCtrl($scope, $resource, SaveQuiz) {
     savedAnswers = [];
     //set an initial value for selected radio buttons to check if none selected
     $scope.radios = {selected: 'X'};
+    //get number for question based on step
+    $scope.questionNum = function(){
+        questionNumber = step+1;
+        return questionNumber;
+    }
     
     //get questions --load all questions and answers, and then parse them out later--this should be moved to the services
     Question = $resource('/quizzes/show');
