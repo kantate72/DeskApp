@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300);
-@import url(bootstrap-responsive.min.css);
 /* line 17, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 11, ../../app/assets/stylesheets/_base.scss */
+/* line 10, ../../app/assets/stylesheets/_base.scss */
 .debug_dump {
   background-color: #EEEEEE;
   clear: both;
@@ -80,30 +79,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
-/* line 23, ../../app/assets/stylesheets/_base.scss */
+/* line 22, ../../app/assets/stylesheets/_base.scss */
 body, input {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-/* line 26, ../../app/assets/stylesheets/_base.scss */
+/* line 25, ../../app/assets/stylesheets/_base.scss */
 a {
   text-decoration: none;
 }
-/* line 28, ../../app/assets/stylesheets/_base.scss */
+/* line 27, ../../app/assets/stylesheets/_base.scss */
 a:link, a:visited {
   color: #438fc1;
 }
-/* line 31, ../../app/assets/stylesheets/_base.scss */
+/* line 30, ../../app/assets/stylesheets/_base.scss */
 a:hover {
   color: #426283;
 }
 
-/* line 35, ../../app/assets/stylesheets/_base.scss */
+/* line 34, ../../app/assets/stylesheets/_base.scss */
 li {
   list-style-type: none;
 }
 
-/* line 38, ../../app/assets/stylesheets/_base.scss */
+/* line 37, ../../app/assets/stylesheets/_base.scss */
 #error_explanation, .alert {
   color: #cd0619;
   display: block;
