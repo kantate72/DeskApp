@@ -1,0 +1,40 @@
+@import "compass/css3";
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+
+.debug_dump {
+    background-color: #EEEEEE;
+    clear: both;
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 45px;
+    padding: 12px;
+    width: 100%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    &:link, &:visited {
+        color:#438fc1;
+    }
+    &:hover {
+        color:#426283;
+    }
+}
+li {
+    list-style-type:none;
+}
+#error_explanation, .alert{
+    color:#cd0619;
+    display: block;
+    font-size:12px;
+    line-height:14px;
+    margin-bottom:8px;
+}

@@ -1,0 +1,144 @@
+/*pulling in base files for quick fix for Heroku bundle problem*/
+@import "compass/css3";
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+
+.debug_dump {
+    background-color: #EEEEEE;
+    clear: both;
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 45px;
+    padding: 12px;
+    width: 100%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    &:link, &:visited {
+        color:#438fc1;
+    }
+    &:hover {
+        color:#426283;
+    }
+}
+li {
+    list-style-type:none;
+}
+#error_explanation, .alert{
+    color:#cd0619;
+    display: block;
+    font-size:12px;
+    line-height:14px;
+    margin-bottom:8px;
+}
+
+
+#Container {
+    max-width:600px;
+    width:100%;
+    margin:28px auto;
+    
+    header {
+        font-size: 14px;
+        margin: 0 auto 40px;
+        width: 150px;
+        li {
+            display:inline-block;
+            margin:0 12px;
+        }
+    }
+    header.logged-in {
+        margin-bottom:75px;
+        text-align: center;
+        width: 100%;
+        
+        .welcome {
+            color:#7A7A7A;
+            margin-right: 3%;
+        }
+    }
+}
+.login-reg, .quiz-form {
+    background-color:#ededed;
+    border-radius:4px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin:120px auto 0;
+    max-width:410px;
+    width:100%;
+    padding:38px;
+    
+    input {
+        border-radius:4px;
+        border:1px solid #fff;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box;
+        color: #BABABA;
+        font-size: 18px;
+        margin-bottom: 16px;
+        padding: 12px 10px;
+        width: 100%;
+        
+        &:focus {
+            border:1px solid #438fc1;
+        }
+    }
+    .btn {
+        background-color: #9B58B5;
+        border:none;
+        color: #fff;
+        cursor:pointer;
+        font-size: 17px;
+        margin: 16px 0 0;
+        padding: 12px;
+        
+        &:hover {
+            background-color:#864c9d;
+        }
+    }
+}
+.quiz-form {
+    max-width: 560px;
+    margin-top:30px;
+    
+    ol{
+        overflow:hidden;
+        
+        li {
+            color: #AFAFAF;
+            font-size: 14px;
+            margin: 0 0 22px;
+        }
+        
+        input {
+            margin: 0 12px 0 0;
+            width: 13px;
+            
+        }
+    }
+    .btn {
+        border-radius: 4px;
+        display:block;
+        margin-top: 4px;
+        padding: 13px;
+        width:100%;
+    }
+    
+    
+}
+.question {
+    color: #7A7A7A;
+    font-size: 17px;
+    margin:0 auto;
+    text-align: center;
+}
