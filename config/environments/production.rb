@@ -46,14 +46,8 @@ QuizApp::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-<<<<<<< HEAD
   config.assets.precompile += %w( screen.css _base.css angular.min.js angular-resource.min.js )
-    
-    
-=======
-  config.assets.precompile += %w( *.js *.css )
 
->>>>>>> db584a901126ce696d1ea30b0d0e79489f23c5f8
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 

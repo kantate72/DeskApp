@@ -1,1 +1,0 @@
-angular.module("quiz.services",["ngResource"]),angular.module("quiz.services",["ngResource"]).factory("SaveQuiz",function(e){var r=e("/quizzes",{},{create:{method:"POST"},index:{method:"GET",isArray:!0},update:{method:"PUT"},destroy:{method:"DELETE"}});return r});
